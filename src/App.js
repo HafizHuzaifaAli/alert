@@ -15,7 +15,7 @@ const [alert,setalert]= useState(false)
 const [item,setItem]= useState([])
 
 const render= (tit,pri,ima,des,siz,cat)=>{
-      setItem([tit,pri,ima,des,siz,cat])
+      setItem([`Title: ${tit}` ,`Price: ${pri}`,`Image: ${ima}`,`Description: ${des}`,`Size: ${siz}`,`Category: ${cat}`])
       setalert(true)
 }
   return (
